@@ -1,5 +1,5 @@
 #### Soothe
-- reference: [练习：Compose 中的基本布局](https://developer.android.com/codelabs/jetpack-compose-layouts?hl=zh-cn#0)
+- reference: [Compose 中的基本布局](https://developer.android.com/codelabs/jetpack-compose-layouts?hl=zh-cn#0)
 
 #### Source code
 - 课程
@@ -10,6 +10,6 @@
 
 #### 效果
 - 竖屏
-- ![screenshot_portrait](./app/src/main/res/drawable/screenshot_20260815_110719.png)
+- ![screenshot_portrait](./app/src/main/res/drawable/screenshot_20260815_115314.png)
 - 横屏
-- ![screenshot_landscape](./app/src/main/res/drawable/screenshot_20260815_110747.png)
+- ![screenshot_landscape](./app/src/main/res/drawable/screenshot_20260815_115334.png)
