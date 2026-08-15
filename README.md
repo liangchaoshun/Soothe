@@ -10,6 +10,6 @@
 
 #### 效果
 - 竖屏
-![screenshot_portrait](./app/src/main/res/drawable/screenshot_portrait.png)
+- ![screenshot_portrait](./app/src/main/res/drawable/screenshot_20260815_110719.png)
 - 横屏
-![screenshot_landscape](./app/src/main/res/drawable/screenshot_landscape.png)
+- ![screenshot_landscape](./app/src/main/res/drawable/screenshot_20260815_110747.png)
