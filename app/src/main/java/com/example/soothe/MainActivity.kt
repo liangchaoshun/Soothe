@@ -75,23 +75,14 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun SootheApp(wsc: WindowSizeClass) {
     when (wsc.widthSizeClass) {
-        WindowWidthSizeClass.Compact -> {
-            SootheAppPortrait()
-        }
-
-        WindowWidthSizeClass.Medium -> {
-            SootheAppPortrait()
-        }
-
-        WindowWidthSizeClass.Expanded -> {
-            SootheAppLandscape()
-        }
+        WindowWidthSizeClass.Expanded -> SootheAppLandscape()
+        else -> SootheAppPortrait()  // Compact 和 Medium
     }
 }
 
 @Composable
 fun SootheAppPortrait() {
-    SootheTheme() {
+    SootheTheme {
         Scaffold(bottomBar = { SootheBottomNavigation() }) { padding ->
             HomeScreen(Modifier.padding(padding))
         }
@@ -100,7 +91,7 @@ fun SootheAppPortrait() {
 
 @Composable
 fun SootheAppLandscape() {
-    SootheTheme() {
+    SootheTheme {
         Surface(color = MaterialTheme.colorScheme.background) {
             Row {
                 SootheNavigationRail()
@@ -245,6 +236,22 @@ fun AlignYourBodyRow(modifier: Modifier = Modifier) {
         }
     }
 }
+
+/*
+@Composable
+fun AlignYourBodyRow(modifier: Modifier = Modifier) {
+    // https://chat.deepseek.com/share/o000nsi0vxa0tetuhq
+    FlowRow(
+        modifier = modifier.padding(horizontal = 16.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        alignYourBodyData.forEach { item ->
+            AlignYourBodyElement(item.image, item.text)
+        }
+    }
+}
+*/
 
 @Composable
 fun AlignYourBodyElement(
