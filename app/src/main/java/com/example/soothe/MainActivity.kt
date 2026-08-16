@@ -135,7 +135,7 @@ private fun SootheBottomNavigation(modifier: Modifier = Modifier) {
 @Composable
 private fun SootheNavigationRail(modifier: Modifier = Modifier) {
     NavigationRail(
-        modifier = modifier.padding(start = 8.dp, end = 8.dp),
+        modifier = modifier,
         containerColor = MaterialTheme.colorScheme.background
     ) {
         Column(
